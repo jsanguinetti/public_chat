@@ -1,4 +1,5 @@
 from users import users
+from auth import auth, requires_auth
 from flask import Flask
 from flask import jsonify
 from flask import request
@@ -6,9 +7,11 @@ from flask import request
 app = Flask(__name__)
 
 app.register_blueprint(users)
+app.register_blueprint(auth)
 
 
 @app.route('/')
+@requires_auth
 def hello_world():
     return jsonify({"message": "Hello World!"})
 
