@@ -1,10 +1,10 @@
 from flask import jsonify, request, Blueprint, json
 from google.appengine.ext import ndb
 from model_utils import ModelUtils
+from auth import add_authentication_headers
+from werkzeug.security import generate_password_hash, check_password_hash
 
 users = Blueprint('users', __name__)
-from werkzeug.security import generate_password_hash, \
-    check_password_hash
 
 
 class Account(ModelUtils, ndb.Model):
@@ -29,7 +29,25 @@ def index():
 
 @users.route('/users', methods=['POST'])
 def create():
-    user = Account(email=request.get_json()['email'],
-                   pw_hash=generate_password_hash(request.get_json()['password']))
-    user.put()
-    return jsonify({"message": user.to_dict()});
+    accounts = Account.query(Account.email == request.get_json()['email'])
+    if accounts.get():
+        resp = jsonify({"message": "user already exists"})
+        resp.status_code = 422
+        return resp
+    else:
+        user = Account(email=request.get_json()['email'],
+                       pw_hash=generate_password_hash(request.get_json()['password']))
+        user.put()
+        return jsonify({"message": user.to_dict()})
+
+
+@users.route('/users/authenticate', methods=['POST'])
+def authenticate():
+    account = Account.query(Account.email == request.get_json()['email']).get()
+    authenticated = (account is not None) & check_password_hash(account.pw_hash, request.get_json()['password'])
+    if authenticated:
+        return add_authentication_headers(jsonify(account.to_dict()))
+    else:
+        resp = jsonify({"message": 'Wrong email or password'})
+        resp.status_code = 401
+        return resp
