@@ -46,7 +46,7 @@ def authenticate():
     account = Account.query(Account.email == request.get_json()['email']).get()
     authenticated = (account is not None) & check_password_hash(account.pw_hash, request.get_json()['password'])
     if authenticated:
-        return add_authentication_headers(jsonify(account.to_dict()))
+        return add_authentication_headers(jsonify(account.to_dict()), account)
     else:
         resp = jsonify({"message": 'Wrong email or password'})
         resp.status_code = 401
