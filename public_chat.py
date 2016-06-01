@@ -46,17 +46,17 @@ def hello_world():
     user = users.get_current_user()
     if user:
         url = users.create_logout_url(request.url)
-        url_linktext = 'Logout'
+        url_link_text = 'Logout'
     else:
         url = users.create_login_url(request.url)
-        url_linktext = 'Login'
+        url_link_text = 'Login'
 
     return render_template('index.html',
                            user=user,
                            greetings=greetings,
                            guestbook_name=urllib.quote_plus(guestbook_name),
                            url=url,
-                           url_linktext=url_linktext)
+                           url_linktext=url_link_text)
 
 
 @app.route('/sign', methods=['POST'])
