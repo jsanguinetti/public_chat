@@ -4,8 +4,7 @@ import urllib
 from google.appengine.api import users
 from google.appengine.ext import ndb
 
-from flask import request, render_template, redirect, flash, Blueprint
-from forms import GreetingForm
+from flask import request, render_template, redirect, Blueprint
 
 guestbooks = Blueprint('guestbook', __name__)
 
@@ -39,7 +38,6 @@ class Greeting(ndb.Model):
     date = ndb.DateTimeProperty(auto_now_add=True)
 
 
-
 @guestbooks.route('/')
 def hello_world():
     guestbook_name = request.args.get('guestbook_name', DEFAULT_GUESTBOOK_NAME)
@@ -47,25 +45,10 @@ def hello_world():
         ancestor=guestbook_key(guestbook_name)).order(-Greeting.date)
     greetings = greetings_query.fetch(10)
     user = users.get_current_user()
-    if user:
-        url = users.create_logout_url(request.url)
-        url_link_text = 'Logout'
-    else:
-        url = users.create_login_url(request.url)
-        url_link_text = 'Login'
-
-    form = GreetingForm()
-    if form.validate_on_submit():
-        flash('Login requested for content="%s"' % form.content.data)
-        return redirect('/')
-
     return render_template('index.html',
                            user=user,
                            greetings=greetings,
-                           guestbook_name=urllib.quote_plus(guestbook_name),
-                           url=url,
-                           url_linktext=url_link_text,
-                           form=form)
+                           guestbook_name=urllib.quote_plus(guestbook_name))
 
 
 @guestbooks.route('/sign', methods=['POST'])
