@@ -61,7 +61,7 @@ def sign():
             identity=users.get_current_user().user_id(),
             email=users.get_current_user().email())
 
-    greeting.content = request.args.get('content')
+    greeting.content = request.form['content']
     greeting.put()
     query_params = {'guestbook_name': guestbook_name}
     return redirect('/?' + urllib.urlencode(query_params))
