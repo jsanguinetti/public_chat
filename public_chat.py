@@ -1,25 +1,22 @@
 # [START imports]
-from google.appengine.api import users
 
+from filters.context_processors import url_links_processor
+from filters.login_filter import login_filter
 from flask import Flask, request
 from guestbooks import guestbooks
 
 app = Flask(__name__)
-app.config.from_object('config')
 app.register_blueprint(guestbooks)
 
 
 @app.context_processor
 def inject_base_template_vars():
-    user = users.get_current_user()
-    if user:
-        url = users.create_logout_url(request.url)
-        url_link_text = 'Logout'
-    else:
-        url = users.create_login_url(request.url)
-        url_link_text = 'Login'
-    return dict(url=url,
-                url_link_text=url_link_text)
+    return url_links_processor(request)
+
+
+@app.before_request
+def before_request():
+    return login_filter(request)
 
 
 if __name__ == '__main__':
