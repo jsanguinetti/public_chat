@@ -2,7 +2,8 @@
 import urllib
 from google.appengine.api import users
 from google.appengine.ext import ndb
-from flask import Flask, request, render_template, redirect
+from flask import Flask, request, render_template, redirect, flash
+from forms import GreetingForm
 
 DEFAULT_GUESTBOOK_NAME = 'default_guestbook'
 
@@ -35,6 +36,7 @@ class Greeting(ndb.Model):
 
 
 app = Flask(__name__)
+app.config.from_object('config')
 
 
 @app.route('/')
@@ -51,12 +53,18 @@ def hello_world():
         url = users.create_login_url(request.url)
         url_link_text = 'Login'
 
+    form = GreetingForm()
+    if form.validate_on_submit():
+        flash('Login requested for content="%s"' % form.content.data)
+        return redirect('/')
+
     return render_template('index.html',
                            user=user,
                            greetings=greetings,
                            guestbook_name=urllib.quote_plus(guestbook_name),
                            url=url,
-                           url_linktext=url_link_text)
+                           url_linktext=url_link_text,
+                           form=form)
 
 
 @app.route('/sign', methods=['POST'])
