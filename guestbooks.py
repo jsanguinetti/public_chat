@@ -45,7 +45,7 @@ def hello_world():
         ancestor=guestbook_key(guestbook_name)).order(-Greeting.date)
     greetings = greetings_query.fetch(10)
     user = users.get_current_user()
-    return render_template('index.html',
+    return render_template('home.html',
                            user=user,
                            greetings=greetings,
                            guestbook_name=urllib.quote_plus(guestbook_name))
