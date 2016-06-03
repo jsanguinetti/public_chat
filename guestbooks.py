@@ -6,7 +6,7 @@ from google.appengine.ext import ndb
 
 from flask import request, render_template, redirect, Blueprint
 
-guestbooks = Blueprint('guestbook', __name__)
+guestbooks = Blueprint('guestbooks', __name__)
 
 DEFAULT_GUESTBOOK_NAME = 'default_guestbook'
 
