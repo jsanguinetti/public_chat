@@ -5,4 +5,8 @@ from flask import redirect
 def login_filter(request):
     if '/login' not in request.url:
         if not users.get_current_user():
-            return redirect(users.create_login_url(request.url))
+            return redirect('/login')
+    else:
+        if users.get_current_user():
+            return redirect('/')
+    # return redirect(users.create_login_url(request.url))
