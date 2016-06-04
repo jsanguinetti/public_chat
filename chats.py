@@ -28,8 +28,6 @@ def chat_index():
 
 @chats.route('/chats', methods=['POST'])
 def chat_post():
-    # Chat(name=request.args.get('name'),
-    #      description=request.args.get('descriptions')).put()
     Chat(id=request.form['name'],
          name=request.form['name'],
          description=request.form['description']).put()
