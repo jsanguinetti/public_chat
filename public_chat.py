@@ -2,13 +2,18 @@
 
 from filters.context_processors import url_links_processor
 from filters.login_filter import login_filter
-from flask import Flask, request
+from flask import Flask, request, redirect
 from chats import chats
 from logins import logins
 
 app = Flask(__name__)
 app.register_blueprint(logins)
 app.register_blueprint(chats)
+
+
+@app.route('/')
+def home():
+    return redirect('/chats')
 
 
 @app.context_processor
