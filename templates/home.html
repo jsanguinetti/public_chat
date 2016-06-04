@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+   <style type="text/css">
+        form {
+            margin-top: 10px;
+        }
+
+        .form-signin input[type="text"] {
+            font-size: 16px;
+            height: auto;
+            margin-bottom: 15px;
+            padding: 7px 9px;
+        }
+
+        .row {
+            margin-left: 0px;
+            margin-top: 10px;
+            overflow: scroll;
+        }
+    </style>
+{% block content %}
+    <div class="container">
+        <!-- [START greetings] -->
+        {% for greeting in greetings %}
+            <div class="row">
+                {% if greeting.author %}
+                    <b>{{ greeting.author.email }}
+                        {% if user and user.user_id() == greeting.author.identity %}
+                            (You)
+                        {% endif %}
+                    </b> wrote:
+                {% else %}
+                    An anonymous person wrote:
+                {% endif %}
+                <blockquote>{{ greeting.content }}</blockquote>
+            </div>
+        {% endfor %}
+        <!-- [END greetings] -->
+
+        <form action="/sign?chat_name={{ guestbook_name }}" method="post">
+            <div><textarea name="content" class="input-block-level" rows="3"></textarea></div>
+            <div><input type="submit" class="btn btn-large btn-primary" value="Sign Guestbook"></div>
+        </form>
+
+        <hr>
+
+        <form>Guestbook name:
+            <input value="{{ guestbook_name }}" name="guestbook_name">
+            <input type="submit" value="switch">
+        </form>
+        <br><br><br><br>
+    </div>
+{% endblock %}
+
