@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+<!-- Simple list -->
+{% block content %}
+    <style>
+        .chat-card {
+            text-align: center;
+            margin-left: 15%;
+            padding-top: 0px;
+            margin-bottom: 20px;
+        }
+
+        .demo-card-square > .mdl-card__title {
+            color: #fff;
+            background-color: darkred;
+        }
+
+        .new-chat-button {
+            margin-top: -50px;
+            margin-left: 80%;
+            z-index: 100;
+            position: fixed;
+        }
+
+        .mdl-dialog {
+            padding: 0px;
+        }
+
+        .mdl-grid {
+            padding: 0px;
+        }
+
+        .mdl-dialog__actions {
+            padding: 0px;
+        }
+
+        .close {
+            text-align: center;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+    </style>
+    <button class="new-chat-button mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent"
+            id="add">
+        <i class="material-icons" role="presentation">add</i>
+        <span class="visuallyhidden">Add</span>
+    </button>
+        {% for chat in chats %}
+            <div class="chat-card">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                        <h2 class="mdl-card__title-text">{{ chat.name }}</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        {{ chat.description }}
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                           href={{ '/chats/'+chat.name }}>
+                            View Updates
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    <dialog class="mdl-dialog">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--2-col"></div>
+            <div class="mdl-cell mdl-cell--2-col"></div>
+            <div class="mdl-cell mdl-cell--2-col"></div>
+            <div class="mdl-cell mdl-cell--2-col">
+                <div class="mdl-dialog__actions">
+                    <button type="button" class="mdl-button close">
+                        X
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <form action="/chats" method="post">
+            <div class="mdl-dialog__content">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input name='name' class="mdl-textfield__input" type="text" id="name">
+                    <label class="mdl-textfield__label" for="name">Chat name</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <textarea name='description' class="mdl-textfield__input" type="text" rows="3"
+                              id="description"></textarea>
+                    <label class="mdl-textfield__label" for="description">Chat description</label>
+                </div>
+            </div>
+            <input type="button" class="mdl-button mdl-js-button mdl-button--raised" value="SUBMIT">
+        </form>
+    </dialog>
+    <script>
+        var dialog = document.querySelector('dialog');
+        var showModalButton = document.querySelector('.new-chat-button');
+        if (!dialog.showModal) {
+            dialogPolyfill.registerDialog(dialog);
+        }
+        showModalButton.addEventListener('click', function () {
+            dialog.showModal();
+        });
+        dialog.querySelector('.close').addEventListener('click', function () {
+            dialog.close();
+        });
+    </script>
+{% endblock %}

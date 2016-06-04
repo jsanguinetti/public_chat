@@ -9,4 +9,3 @@ def login_filter(request):
     else:
         if users.get_current_user():
             return redirect('/')
-    # return redirect(users.create_login_url(request.url))
