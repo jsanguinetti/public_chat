@@ -33,6 +33,14 @@ def chat_post():
          description=request.form['description']).put()
     return redirect('/chats')
 
+
+@chats.route('/chats/<chat_name>')
+def chat_show(chat_name):
+    chat = chat_name
+    return render_template('chat_view.html',
+                           chat=chat,
+                           title=chat_name)
+
 # def chat_key(chat_name):
 #     return ndb.Key('Chat', chat_name)
 #
