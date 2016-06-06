@@ -1,26 +1,10 @@
-# [START imports]
-import urllib
-
-from google.appengine.api import users
 from google.appengine.ext import ndb
 
 from flask import request, render_template, redirect, Blueprint
+from models.chat import Chat
+from models.message import Message
 
 chats = Blueprint('chats', __name__)
-
-
-# We set a parent key on the 'Greetings' to ensure that they are all
-# in the same entity group. Queries across the single entity group
-# will be consistent. However, the write rate should be limited to
-# ~1/second.
-class Chat(ndb.Model):
-    name = ndb.StringProperty(required=True)
-    description = ndb.StringProperty(required=True)
-
-
-class Message(ndb.Model):
-    content = ndb.StringProperty(indexed=False, required=True)
-    date = ndb.DateTimeProperty(auto_now_add=True)
 
 
 @chats.route('/chats', methods=['GET'])
