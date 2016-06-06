@@ -18,6 +18,11 @@ class Chat(ndb.Model):
     description = ndb.StringProperty(required=True)
 
 
+class Message(ndb.Model):
+    content = ndb.StringProperty(indexed=False, required=True)
+    date = ndb.DateTimeProperty(auto_now_add=True)
+
+
 @chats.route('/chats', methods=['GET'])
 def chat_index():
     chat_query = Chat.query().order(-Chat.name)
@@ -34,12 +39,22 @@ def chat_post():
     return redirect('/chats')
 
 
+def put_first_chat_message(chat_key):
+    Message(parent=chat_key,
+            content='First test message for chat').put()
+
+
 @chats.route('/chats/<chat_name>')
 def chat_show(chat_name):
-    chat = chat_name
+    chat_key = ndb.Key('Chat', chat_name)
+    # put_first_chat_message(chat_key)
+    chat = chat_key.get()
+    messages = Message.query(ancestor=chat_key).order(-Message.date)
+    messages = messages.fetch(10)
     return render_template('chat_view.html',
                            chat=chat,
-                           title=chat_name)
+                           messages=messages,
+                           title=chat.name)
 
 # def chat_key(chat_name):
 #     return ndb.Key('Chat', chat_name)

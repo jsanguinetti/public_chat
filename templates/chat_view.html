@@ -15,6 +15,7 @@
         .chat-wrapper {
             margin-top: 3%;
             width: 80%;
+            height: 70%;
             overflow: hidden;
             position: fixed;
             box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.5);
@@ -182,8 +183,6 @@
                 height: 90%;
             }
 
-
-
         }
 
 
@@ -192,38 +191,12 @@
         <div class="chat-wrapper">
             <div id="inner" class="inner">
                 <div id="content" class="content">
-                    <div class="message-wrapper them">
-                        <div class="circle-wrapper animated bounceIn"></div>
-                        <div class="text-wrapper animated fadeIn">Hello there!</div>
-                    </div>
-                    <div class="message-wrapper them">
-                        <div class="circle-wrapper animated bounceIn"></div>
-                        <div class="text-wrapper animated fadeIn">Hello there!</div>
-                    </div>
-                    <div class="message-wrapper them">
-                        <div class="circle-wrapper animated bounceIn"></div>
-                        <div class="text-wrapper animated fadeIn">Hello there!</div>
-                    </div>
-                    <div class="message-wrapper them">
-                        <div class="circle-wrapper animated bounceIn"></div>
-                        <div class="text-wrapper animated fadeIn">Hello there!</div>
-                    </div>
-                    <div class="message-wrapper them">
-                        <div class="circle-wrapper animated bounceIn"></div>
-                        <div class="text-wrapper animated fadeIn">Hello there!</div>
-                    </div>
-                    <div class="message-wrapper them">
-                        <div class="circle-wrapper animated bounceIn"></div>
-                        <div class="text-wrapper animated fadeIn">Hello there!</div>
-                    </div>
-                    <div class="message-wrapper them">
-                        <div class="circle-wrapper animated bounceIn"></div>
-                        <div class="text-wrapper animated fadeIn">Hello there!</div>
-                    </div>
-                    <div class="message-wrapper them">
-                        <div class="circle-wrapper animated bounceIn"></div>
-                        <div class="text-wrapper animated fadeIn">Hello there!</div>
-                    </div>
+                    {% for message in messages %}
+                        <div class="message-wrapper them">
+                            <div class="circle-wrapper animated bounceIn"></div>
+                            <div class="text-wrapper animated fadeIn">{{ message.content }}</div>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
             <div id="bottom" class="bottom">
@@ -232,5 +205,4 @@
             </div>
         </div>
     </div>
-    {{ chat }}
 {% endblock %}
