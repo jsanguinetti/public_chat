@@ -21,9 +21,9 @@ def inject_base_template_vars():
     return url_links_processor(request)
 
 
-# @app.before_request
-# def before_request():
-#     return login_filter(request)
+@app.before_request
+def before_request():
+    return login_filter(request)
 
 
 if __name__ == '__main__':

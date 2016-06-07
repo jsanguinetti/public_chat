@@ -200,9 +200,16 @@
                 </div>
             </div>
             <div id="bottom" class="bottom">
-                <textarea id="input" class="input"></textarea>
-                <div id="send" class="send"></div>
+                <form id="newMessageForm" action={{ "/chats/"+chat.name+"/messages" }} method="post">
+                    <textarea name="content" id="input" class="input"></textarea>
+                    <div id="send" class="send" onclick=submit_message()></div>
+                </form>
             </div>
         </div>
     </div>
+    <script>
+        function submit_message() {
+            document.getElementById("newMessageForm").submit();
+        }
+    </script>
 {% endblock %}

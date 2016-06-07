@@ -1,5 +1,3 @@
-from google.appengine.ext import ndb
-
 from flask import request, render_template, redirect, Blueprint
 from models.chat import Chat, chat_key_from_name
 from models.message import Message
@@ -23,15 +21,9 @@ def chat_post():
     return redirect('/chats')
 
 
-def put_first_chat_message(chat_key):
-    Message(parent=chat_key,
-            content='First test message for chat').put()
-
-
 @chats.route('/chats/<chat_name>')
 def chat_show(chat_name):
     chat_key = chat_key_from_name(chat_name)
-    # put_first_chat_message(chat_key)
     chat = chat_key.get()
     messages = Message.query(ancestor=chat_key).order(-Message.date)
     messages = messages.fetch(10)
