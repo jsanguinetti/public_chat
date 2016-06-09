@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <style>
         .mdl-grid {
             margin-left: 2%;
@@ -125,7 +126,13 @@
             border-radius: 2px;
             font-weight: 300;
             position: relative;
+            text-align: left;
             /* word-break: break-all; */
+        }
+
+        .message-wrapper .text-wrapper .sender-title {
+            font-weight: bold;
+            font-size: large;
         }
 
         .message-wrapper .text-wrapper:before {
@@ -189,27 +196,67 @@
     </style>
     <div class="mdl-grid">
         <div class="chat-wrapper">
-            <div id="inner" class="inner">
+            <div id="inner" class="inner" onscroll="onScrolledMessageList()">
                 <div id="content" class="content">
                     {% for message in messages %}
                         <div class="message-wrapper them">
                             <div class="circle-wrapper animated bounceIn"></div>
-                            <div class="text-wrapper animated fadeIn">{{ message.content }}</div>
+                            <div class="text-wrapper animated fadeIn">
+                                <div class="sender-title">{{ message.get_user_dict()['nickname'] }} says:</div>
+                                {{ message.content }}
+                            </div>
                         </div>
                     {% endfor %}
                 </div>
             </div>
             <div id="bottom" class="bottom">
-                <form id="newMessageForm" action={{ "/chats/"+chat.name+"/messages" }} method="post">
-                    <textarea name="content" id="input" class="input"></textarea>
-                    <div id="send" class="send" onclick=submit_message()></div>
-                </form>
+                <textarea name="content" id="text-message-input" class="input"></textarea>
+                <div id="send" class="send" onclick=submit_message()></div>
             </div>
         </div>
     </div>
     <script>
+        var scrolled = false;
+        function updateScroll() {
+{#            if (!scrolled) {#}
+                $("#inner").animate({ scrollTop: $('#content').prop("scrollHeight")}, 1000);
+
+{#            }#}
+        }
+
+        function onScrolledMessageList() {
+            scrolled = true;
+        };
+
+        function appendMessage(data) {
+            $("#content").append(
+                    "<div class='message-wrapper them'>" +
+                    "<div class='circle-wrapper animated bounceIn'>" +
+                    "</div><div class='text-wrapper animated fadeIn'>" +
+                    "<div class='sender-title'>user says:" +
+                    "</div>message content" +
+                    "</div>" +
+                    "</div>"
+            );
+            updateScroll();
+        }
+
         function submit_message() {
-            document.getElementById("newMessageForm").submit();
+            var textContent = $("#text-message-input").val()
+            $.ajax({
+                type: "POST",
+                url: "{{ "/chats/"+chat.name+"/messages" }}",
+                data: JSON.stringify({content: textContent}),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    appendMessage(data);
+                },
+                failure: function (errMsg) {
+                    console.log(errMsg);
+                    alert(errMsg);
+                }
+            });
         }
     </script>
 {% endblock %}
