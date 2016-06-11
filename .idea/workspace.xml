@@ -2,323 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b67fa185-2ce2-4992-993d-f5168f335b4f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/bin/jwt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/distutils/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/distutils/distutils.cfg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Flask-0.10.1.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Flask-0.10.1.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Flask-0.10.1.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Flask-0.10.1.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Flask-0.10.1.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Flask-0.10.1.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Flask_WTF-0.12.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Flask_WTF-0.12.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Flask_WTF-0.12.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Flask_WTF-0.12.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Flask_WTF-0.12.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Flask_WTF-0.12.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Jinja2-2.8.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Jinja2-2.8.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Jinja2-2.8.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Jinja2-2.8.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Jinja2-2.8.dist-info/entry_points.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Jinja2-2.8.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/Jinja2-2.8.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/MarkupSafe-0.23.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/MarkupSafe-0.23.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/MarkupSafe-0.23.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/MarkupSafe-0.23.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/MarkupSafe-0.23.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/MarkupSafe-0.23.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/PyJWT-1.4.0.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/PyJWT-1.4.0.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/PyJWT-1.4.0.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/PyJWT-1.4.0.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/PyJWT-1.4.0.dist-info/entry_points.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/PyJWT-1.4.0.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/PyJWT-1.4.0.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/WTForms-2.1.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/WTForms-2.1.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/WTForms-2.1.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/WTForms-2.1.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/WTForms-2.1.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/WTForms-2.1.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/_cffi_backend.so" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi-1.6.0.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi-1.6.0.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi-1.6.0.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi-1.6.0.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi-1.6.0.dist-info/entry_points.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi-1.6.0.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi-1.6.0.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi/_cffi_include.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi/_embedding.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi/api.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi/backend_ctypes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi/cffi_opcode.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi/commontypes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi/cparser.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi/ffiplatform.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi/gc_weakref.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi/lock.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi/model.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi/parse_c_type.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi/recompiler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi/setuptools_ext.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi/vengine_cpy.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi/vengine_gen.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/cffi/verifier.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/module.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/appctx.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/basic.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/blueprints.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/config.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/deprecations.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/examples.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/ext.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/helpers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/regression.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/reqctx.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/signals.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/static/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/subclassing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/templates/_macro.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/templates/context_template.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/templates/escaping_template.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/templates/mail.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/templates/nested/nested.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/templates/simple_template.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/templates/template_filter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/templates/template_test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/templating.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/admin/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/admin/static/css/test.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/admin/static/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/admin/templates/admin/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/frontend/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/blueprintapp/apps/frontend/templates/frontend/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/config_module_app.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/config_package_app/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/flask_broken/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/flask_broken/b.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/flask_newext_package/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/flask_newext_package/submodule.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/flask_newext_simple.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/flaskext/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/flaskext/oldext_package/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/flaskext/oldext_package/submodule.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/flaskext/oldext_simple.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/importerror.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/lib/python2.5/site-packages/SiteEgg.egg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/lib/python2.5/site-packages/site_app.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/lib/python2.5/site-packages/site_package/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/main_app.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/admin/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/admin/static/css/test.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/admin/static/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/admin/templates/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/frontend/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/moduleapp/apps/frontend/templates/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/path/installed_package/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/subdomaintestmodule/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/test_apps/subdomaintestmodule/static/hello.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/testing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testsuite/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask_wtf/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask_wtf/_compat.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask_wtf/csrf.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask_wtf/file.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask_wtf/form.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask_wtf/html5.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask_wtf/i18n.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask_wtf/recaptcha/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask_wtf/recaptcha/fields.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask_wtf/recaptcha/validators.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask_wtf/recaptcha/widgets.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/jwt/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/jwt/__main__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/jwt/algorithms.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/jwt/api_jws.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/jwt/api_jwt.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/jwt/compat.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/jwt/contrib/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/jwt/contrib/algorithms/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/jwt/contrib/algorithms/py_ecdsa.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/jwt/contrib/algorithms/pycrypto.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/jwt/exceptions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/jwt/utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser-2.14.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser-2.14.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser-2.14.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser-2.14.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser-2.14.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser-2.14.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser/_ast_gen.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser/_build_tables.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser/_c_ast.cfg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser/ast_transforms.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser/c_ast.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser/c_generator.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser/c_lexer.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser/c_parser.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser/lextab.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser/ply/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser/ply/cpp.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser/ply/ctokens.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser/ply/lex.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser/ply/yacc.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser/plyparser.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pycparser/yacctab.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/six-1.10.0.dist-info/DESCRIPTION.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/six-1.10.0.dist-info/METADATA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/six-1.10.0.dist-info/RECORD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/six-1.10.0.dist-info/WHEEL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/six-1.10.0.dist-info/metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/six-1.10.0.dist-info/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/six.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/compat.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/csrf/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/csrf/core.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/csrf/session.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/appengine/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/appengine/db.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/appengine/fields.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/appengine/ndb.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/csrf/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/csrf/fields.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/csrf/form.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/csrf/session.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/dateutil/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/dateutil/fields.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/django/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/django/fields.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/django/i18n.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/django/orm.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/django/templatetags/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/django/templatetags/wtforms.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/i18n/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/i18n/form.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/i18n/utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/sqlalchemy/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/sqlalchemy/fields.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/ext/sqlalchemy/orm.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/fields/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/fields/core.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/fields/html5.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/fields/simple.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/form.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/i18n.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/ar/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/ar/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/ca/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/ca/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/cs_CZ/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/cs_CZ/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/cy/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/cy/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/de/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/de/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/de_CH/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/de_CH/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/el/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/el/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/en/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/en/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/es/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/es/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/et/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/et/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/fa/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/fa/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/fr/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/fr/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/it/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/it/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/ja/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/ja/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/ko/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/ko/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/nb/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/nb/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/nl/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/nl/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/pl/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/pl/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/pt/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/pt/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/ru/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/ru/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/uk/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/uk/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/wtforms.pot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/zh/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/zh/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/zh_TW/LC_MESSAGES/wtforms.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/locale/zh_TW/LC_MESSAGES/wtforms.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/meta.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/validators.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/widgets/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/widgets/core.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wtforms/widgets/html5.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/markupsafe/_speedups.so" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/markupsafe/_speedups.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/public_chat.iml" afterPath="$PROJECT_DIR$/.idea/public_chat.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.yaml" afterPath="$PROJECT_DIR$/app.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chats.py" afterPath="$PROJECT_DIR$/chats.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filters/context_processors.py" afterPath="$PROJECT_DIR$/filters/context_processors.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messages.py" afterPath="$PROJECT_DIR$/messages.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/message.py" afterPath="$PROJECT_DIR$/models/message.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/bin/activate" afterPath="$PROJECT_DIR$/pyenv/bin/activate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/bin/activate.csh" afterPath="$PROJECT_DIR$/pyenv/bin/activate.csh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/bin/activate.fish" afterPath="$PROJECT_DIR$/pyenv/bin/activate.fish" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/bin/easy_install" afterPath="$PROJECT_DIR$/pyenv/bin/easy_install" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/bin/easy_install-2.7" afterPath="$PROJECT_DIR$/pyenv/bin/easy_install-2.7" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/bin/pip" afterPath="$PROJECT_DIR$/pyenv/bin/pip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/bin/pip2" afterPath="$PROJECT_DIR$/pyenv/bin/pip2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/bin/pip2.7" afterPath="$PROJECT_DIR$/pyenv/bin/pip2.7" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/bin/wheel" afterPath="$PROJECT_DIR$/pyenv/bin/wheel" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/__init__.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/_compat.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/_compat.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/app.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/blueprints.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/blueprints.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/config.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/ctx.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/ctx.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/debughelpers.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/debughelpers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/ext/__init__.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/ext/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/exthook.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/exthook.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/globals.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/globals.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/helpers.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/helpers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/json.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/json.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/logging.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/logging.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/sessions.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/sessions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/signals.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/signals.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/templating.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/templating.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testing.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/testing.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/views.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/wrappers.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/flask/wrappers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/itsdangerous-0.24.dist-info/RECORD" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/itsdangerous-0.24.dist-info/RECORD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/itsdangerous-0.24.dist-info/WHEEL" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/itsdangerous-0.24.dist-info/WHEEL" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/itsdangerous-0.24.dist-info/metadata.json" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/itsdangerous-0.24.dist-info/metadata.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/jinja2/loaders.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/jinja2/loaders.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pip-7.1.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pip-7.1.0.dist-info/RECORD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pip/index.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/pip/index.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/setuptools-18.0.1.dist-info/RECORD" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/setuptools-18.0.1.dist-info/RECORD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/setuptools/package_index.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/setuptools/package_index.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/werkzeug/exceptions.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/werkzeug/exceptions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/werkzeug/routing.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/werkzeug/routing.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/werkzeug/utils.py" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/werkzeug/utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wheel-0.24.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/wheel-0.24.0.dist-info/RECORD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pyenv/pip-selfcheck.json" afterPath="$PROJECT_DIR$/pyenv/pip-selfcheck.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/chat_view.html" afterPath="$PROJECT_DIR$/templates/chat_view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/chats.html" afterPath="$PROJECT_DIR$/templates/chats.html" />
     </list>
     <ignored path="user-api.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -353,14 +41,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="messages.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="messages.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/messages.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="210">
+              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="public_chat.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_chat.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_filter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/filters/login_filter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="context_processors.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/filters/context_processors.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chats.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/chats.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="80" column="13" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
+              <folding>
+                <element signature="e#2237#2263#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chats.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chats.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-255">
+              <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="51" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -397,7 +153,6 @@
         <option value="$PROJECT_DIR$/context_processors.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/config.py" />
-        <option value="$PROJECT_DIR$/filters/context_processors.py" />
         <option value="$PROJECT_DIR$/templates/base_navbar.html" />
         <option value="$PROJECT_DIR$/guestbooks.py" />
         <option value="$PROJECT_DIR$/login.py" />
@@ -405,19 +160,20 @@
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/filters/login_filter.py" />
         <option value="$PROJECT_DIR$/templates/home.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/chats.html" />
         <option value="$PROJECT_DIR$/templates/css/style.css" />
         <option value="$PROJECT_DIR$/models/chat.py" />
-        <option value="$PROJECT_DIR$/public_chat.py" />
-        <option value="$PROJECT_DIR$/chats.py" />
         <option value="$PROJECT_DIR$/index.yaml" />
         <option value="$PROJECT_DIR$/models/message.py" />
         <option value="$PROJECT_DIR$/pyenv/lib/python2.7/site-packages/ndg/__init__.py" />
         <option value="$PROJECT_DIR$/appengine_config.py" />
         <option value="$PROJECT_DIR$/app.yaml" />
-        <option value="$PROJECT_DIR$/messages.py" />
         <option value="$PROJECT_DIR$/templates/chat_view.html" />
+        <option value="$PROJECT_DIR$/messages.py" />
+        <option value="$PROJECT_DIR$/filters/context_processors.py" />
+        <option value="$PROJECT_DIR$/chats.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/public_chat.py" />
+        <option value="$PROJECT_DIR$/templates/chats.html" />
       </list>
     </option>
   </component>
@@ -473,6 +229,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public_chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_chat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -902,38 +686,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base_navbar.html" />
-    <entry file="file://$PROJECT_DIR$/logins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filters/context_processors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="51" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -947,27 +703,6 @@
     <entry file="file://$PROJECT_DIR$/favicon.ico">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_chat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filters/login_filter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/chats.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="88" column="44" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="44" />
-        </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/google_appengine/google/appengine/api/users.py">
@@ -1120,14 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chats.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
@@ -1144,12 +871,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="51" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/messages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="210">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filters/context_processors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filters/login_filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_chat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/chats.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="80" column="13" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
+          <folding>
+            <element signature="e#2237#2263#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

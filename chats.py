@@ -1,4 +1,4 @@
-from google.appengine.api import users
+from google.appengine.api import users, memcache
 from flask import request, render_template, redirect, Blueprint
 from models.chat import Chat, chat_key_from_name
 from models.message import Message
@@ -6,12 +6,22 @@ from models.message import Message
 chats = Blueprint('chats', __name__)
 
 
+def memcache_message_count():
+    if memcache.get('message_count') != None:
+        message_count = memcache.get('message_count')
+    else:
+        message_count = 0
+        memcache.set('message_count', 0)
+    return message_count
+
+
 @chats.route('/chats', methods=['GET'])
 def chat_index():
     chat_query = Chat.query().order(-Chat.name)
     return render_template('chats.html',
                            chats=chat_query,
-                           title='Chat List')
+                           title='Chat List',
+                           message_count=memcache_message_count())
 
 
 @chats.route('/chats', methods=['POST'])

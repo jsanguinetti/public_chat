@@ -1,4 +1,4 @@
-from google.appengine.api import users
+from google.appengine.api import users, memcache
 
 
 def url_links_processor(request):
