@@ -1,7 +1,7 @@
-from google.appengine.api import users
 from flask import Blueprint, jsonify, request, json
 from models.chat import chat_key_from_name
 from models.message import Message
+
 
 messages = Blueprint('messages', __name__)
 

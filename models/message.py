@@ -1,5 +1,4 @@
 from google.appengine.ext import ndb
-from google.appengine.api import users
 
 
 class Message(ndb.Model):

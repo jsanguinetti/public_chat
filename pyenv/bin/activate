@@ -39,7 +39,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/javier/workspace/public_chat/user-api/pyenv"
+VIRTUAL_ENV="/Users/javier/workspace/public_chat/pyenv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

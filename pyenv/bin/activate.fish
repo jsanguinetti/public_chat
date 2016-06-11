@@ -32,7 +32,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/javier/workspace/public_chat/user-api/pyenv"
+set -gx VIRTUAL_ENV "/Users/javier/workspace/public_chat/pyenv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
