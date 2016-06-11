@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://cdn.pubnub.com/pubnub-3.15.1.min.js"></script>
     <style>
         .mdl-grid {
             margin-left: 2%;
@@ -231,8 +232,14 @@
             ;
 
             function appendMessage(data) {
+                var classForMessage = '';
+                if (data.user.user_id == currentUserId) {
+                    classForMessage = 'me'
+                } else {
+                    classForMessage = 'them'
+                }
                 $("#content").append(
-                        "<div class='message-wrapper me'>" +
+                        "<div class='message-wrapper "+ classForMessage+"'>" +
                         "<div class='circle-wrapper animated bounceIn'>" +
                         "</div><div class='text-wrapper animated fadeIn'>" +
                         "<div class='sender-title'>" + data.user.nickname + " says:" +
@@ -253,7 +260,7 @@
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
                     success: function (data) {
-                        appendMessage(data);
+                        publish(data);
                     },
                     failure: function (errMsg) {
                         console.log(errMsg);
@@ -262,5 +269,36 @@
                 });
             }
             $(window).load(updateScroll);
+        </script>
+        <script>
+            pubnub = PUBNUB({
+                publish_key: 'pub-c-76e26168-50bc-4426-ba45-e000b3c26fec',
+                subscribe_key: 'sub-c-a1cfc456-2f9d-11e6-8b91-02ee2ddab7fe'
+            })
+
+            function publish(message_response) {
+                pubnub.publish({
+                    channel: "{{ chat.name }}",
+                    message: message_response,
+                    callback: function (m) {
+                        console.log(m)
+                    }
+                })
+            }
+            pubnub.subscribe({
+                channel: "{{ chat.name }}",
+                message: function (message, envelope, channelOrGroup, time, channel) {
+                    appendMessage(message)
+                    console.log(
+                            "Message Received." + "\n" +
+                            "Channel or Group : " + JSON.stringify(channelOrGroup) + "\n" +
+                            "Channel : " + JSON.stringify(channel) + "\n" +
+                            "Message : " + JSON.stringify(message) + "\n" +
+                            "Time : " + time + "\n" +
+                            "Raw Envelope : " + JSON.stringify(envelope)
+                    )
+                },
+            })
+
         </script>
 {% endblock %}
