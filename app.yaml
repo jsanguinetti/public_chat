@@ -18,8 +18,8 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
-- url: /bootstrap
-  static_dir: bootstrap
+- url: /public
+  static_dir: public
 
 # App Engine serves and caches static files contained in the listed directories
 # (and subdirectories). Uncomment and set the directory as needed.
