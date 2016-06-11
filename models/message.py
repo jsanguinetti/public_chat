@@ -20,5 +20,6 @@ class Message(ndb.Model):
         dictionary = {}
         user = self.get_user()
         dictionary['email'] = user.email()
+        dictionary['user_id'] = user.user_id()
         dictionary['nickname'] = user.nickname()
         return dictionary

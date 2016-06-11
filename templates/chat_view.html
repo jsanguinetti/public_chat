@@ -157,18 +157,14 @@
         }
 
         .message-wrapper.me .circle-wrapper, .message-wrapper.me .text-wrapper {
-            background: #FF5722;
+            background: #00c853;
             float: right;
             color: #333333;
         }
 
-        .message-wrapper.me .text-wrapper {
-            background: #ffffff;
-        }
-
         .message-wrapper.me .text-wrapper:before {
             border-width: 10px 10px 0 0;
-            border-color: #ffffff transparent transparent transparent;
+            border-color: #00c853 transparent transparent transparent;
             position: absolute;
             top: 0;
             right: -9px;
@@ -199,64 +195,72 @@
             <div id="inner" class="inner" onscroll="onScrolledMessageList()">
                 <div id="content" class="content">
                     {% for message in messages %}
-                        <div class="message-wrapper them">
-                            <div class="circle-wrapper animated bounceIn"></div>
-                            <div class="text-wrapper animated fadeIn">
-                                <div class="sender-title">{{ message.get_user_dict()['nickname'] }} says:</div>
-                                {{ message.content }}
-                            </div>
-                        </div>
+                        {% if message.get_user_dict()['user_id'] == current_user.user_id() %}
+                            <div class="message-wrapper me">
+                        {% else %}
+                            <div class="message-wrapper them">
+                        {% endif %}
+                    <div class="circle-wrapper animated bounceIn"></div>
+                    <div class="text-wrapper animated fadeIn">
+                        <div class="sender-title">{{ message.get_user_dict()['nickname'] }} says:</div>
+                        {{ message.content }}
+                    </div>
+                    </div>
                     {% endfor %}
+                    </div>
+                </div>
+                <div id="bottom" class="bottom">
+                    <textarea name="content" id="text-message-input" class="input"></textarea>
+                    <div id="send" class="send" onclick=submit_message()></div>
                 </div>
             </div>
-            <div id="bottom" class="bottom">
-                <textarea name="content" id="text-message-input" class="input"></textarea>
-                <div id="send" class="send" onclick=submit_message()></div>
-            </div>
         </div>
-    </div>
-    <script>
-        var scrolled = false;
-        function updateScroll() {
-{#            if (!scrolled) {#}
-                $("#inner").animate({ scrollTop: $('#content').prop("scrollHeight")}, 1000);
+        <script>
+            var currentUserId = {{ current_user.user_id() }};
+            var scrolled = false;
+            function updateScroll() {
+                {#            if (!scrolled) {#}
+                $("#inner").animate({scrollTop: $('#content').prop("scrollHeight")}, 1000);
 
-{#            }#}
-        }
+                {#            }#}
+            }
 
-        function onScrolledMessageList() {
-            scrolled = true;
-        };
+            function onScrolledMessageList() {
+                scrolled = true;
+            }
+            ;
 
-        function appendMessage(data) {
-            $("#content").append(
-                    "<div class='message-wrapper them'>" +
-                    "<div class='circle-wrapper animated bounceIn'>" +
-                    "</div><div class='text-wrapper animated fadeIn'>" +
-                    "<div class='sender-title'>user says:" +
-                    "</div>message content" +
-                    "</div>" +
-                    "</div>"
-            );
-            updateScroll();
-        }
+            function appendMessage(data) {
+                $("#content").append(
+                        "<div class='message-wrapper me'>" +
+                        "<div class='circle-wrapper animated bounceIn'>" +
+                        "</div><div class='text-wrapper animated fadeIn'>" +
+                        "<div class='sender-title'>" + data.user.nickname + " says:" +
+                        "</div>" + data.content +
+                        "</div>" +
+                        "</div>"
+                );
+                updateScroll();
+            }
 
-        function submit_message() {
-            var textContent = $("#text-message-input").val()
-            $.ajax({
-                type: "POST",
-                url: "{{ "/chats/"+chat.name+"/messages" }}",
-                data: JSON.stringify({content: textContent}),
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                success: function (data) {
-                    appendMessage(data);
-                },
-                failure: function (errMsg) {
-                    console.log(errMsg);
-                    alert(errMsg);
-                }
-            });
-        }
-    </script>
+            function submit_message() {
+                var textContent = $("#text-message-input").val()
+                $("#text-message-input").val('')
+                $.ajax({
+                    type: "POST",
+                    url: "{{ "/chats/"+chat.name+"/messages" }}",
+                    data: JSON.stringify({content: textContent}),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (data) {
+                        appendMessage(data);
+                    },
+                    failure: function (errMsg) {
+                        console.log(errMsg);
+                        alert(errMsg);
+                    }
+                });
+            }
+            $(window).load(updateScroll);
+        </script>
 {% endblock %}
