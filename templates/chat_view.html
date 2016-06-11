@@ -195,14 +195,14 @@
             <div id="inner" class="inner" onscroll="onScrolledMessageList()">
                 <div id="content" class="content">
                     {% for message in messages %}
-                        {% if message.user_id == current_user.user_id() %}
+                        {% if message.user.user_id() == current_user.user_id() %}
                             <div class="message-wrapper me">
                         {% else %}
                             <div class="message-wrapper them">
                         {% endif %}
                     <div class="circle-wrapper animated bounceIn"></div>
                     <div class="text-wrapper animated fadeIn">
-                        <div class="sender-title">{{ message.get_user_dict()['nickname'] }} says:</div>
+                        <div class="sender-title">{{ message.user.nickname() }} says:</div>
                         {{ message.content }}
                     </div>
                     </div>

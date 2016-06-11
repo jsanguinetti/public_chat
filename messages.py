@@ -9,8 +9,7 @@ messages = Blueprint('messages', __name__)
 @messages.route('/chats/<chat_name>/messages', methods=['POST'])
 def message_post(chat_name):
     message = Message(parent=chat_key_from_name(chat_name),
-                      content=request.get_json()['content'],
-                      user_id=users.get_current_user().user_id())
+                      content=request.get_json()['content'])
     message.put()
     # must handle json response in javascript.
     # important because we will use pusher
