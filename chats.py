@@ -26,8 +26,8 @@ def chat_post():
 def chat_show(chat_name):
     chat_key = chat_key_from_name(chat_name)
     chat = chat_key.get()
-    messages = Message.query(ancestor=chat_key).order(Message.date)
-    messages = messages.fetch(10)
+    reverse_query_messages = Message.query(ancestor=chat_key).order(-Message.date)
+    messages = reversed(reverse_query_messages.fetch(10))
     return render_template('chat_view.html',
                            chat=chat,
                            current_user=users.get_current_user(),

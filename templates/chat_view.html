@@ -195,7 +195,7 @@
             <div id="inner" class="inner" onscroll="onScrolledMessageList()">
                 <div id="content" class="content">
                     {% for message in messages %}
-                        {% if message.get_user_dict()['user_id'] == current_user.user_id() %}
+                        {% if message.user_id == current_user.user_id() %}
                             <div class="message-wrapper me">
                         {% else %}
                             <div class="message-wrapper them">
