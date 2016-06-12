@@ -1,23 +1,6 @@
 {% extends "base.html" %}
-   <style type="text/css">
-        form {
-            margin-top: 10px;
-        }
-
-        .form-signin input[type="text"] {
-            font-size: 16px;
-            height: auto;
-            margin-bottom: 15px;
-            padding: 7px 9px;
-        }
-
-        .row {
-            margin-left: 0px;
-            margin-top: 10px;
-            overflow: scroll;
-        }
-    </style>
 {% block content %}
+    <link rel="stylesheet" href="/public/css/home.css">
     <div class="container">
         <!-- [START greetings] -->
         {% for greeting in greetings %}

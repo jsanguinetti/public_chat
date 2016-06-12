@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="http://cdn.pubnub.com/pubnub-3.15.1.min.js"></script>
+    <script src="/public/jquery/index.js"></script>
+    <script src="/public/pubnub/index.js"></script>
+    <script src="/public/js/chat_view.js"></script>
     <link rel="stylesheet" href="/public/css/chat_view.css">
     <div class="mdl-grid">
         <div class="chat-wrapper">
@@ -31,18 +32,6 @@
 
         <script>
             var currentUserId = {{ current_user.user_id() }};
-            var scrolled = false;
-            function updateScroll() {
-                {#            if (!scrolled) {#}
-                $("#inner").animate({scrollTop: $('#content').prop("scrollHeight")}, 1000);
-
-                {#            }#}
-            }
-
-            function onScrolledMessageList() {
-                scrolled = true;
-            }
-            ;
 
             function appendMessage(data) {
                 var classForMessage = '';
@@ -52,7 +41,7 @@
                     classForMessage = 'them'
                 }
                 $("#content").append(
-                        "<div class='message-wrapper "+ classForMessage+"'>" +
+                        "<div class='message-wrapper " + classForMessage + "'>" +
                         "<div class='circle-wrapper animated bounceIn'>" +
                         "</div><div class='text-wrapper animated fadeIn'>" +
                         "<div class='sender-title'>" + data.user.nickname + " says:" +

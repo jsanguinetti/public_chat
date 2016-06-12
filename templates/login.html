@@ -2,9 +2,9 @@
 <html>
 <head>
     <!-- [START css] -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <link rel="stylesheet" href="/public/mdl/css/material.min.css">
+    <link rel="stylesheet" href="/public/css/login.css">
+    <script defer src="/public/mdl/js/material.min.js"></script>
 
     <!-- [END css] -->
     {% if title %}
@@ -12,46 +12,6 @@
     {% else %}
         <title>Welcome to microblog</title>
     {% endif %}
-    <style>
-        {#        bacground transparent#}
-        .mdl-grid:before {
-            content: ' ';
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            opacity: 0.71;
-            background-image: url("http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg");
-            background-repeat: no-repeat;
-            background-position: 50% 0;
-            -ms-background-size: cover;
-            -o-background-size: cover;
-            -moz-background-size: cover;
-            -webkit-background-size: cover;
-            background-size: cover;
-        }
-
-        {# login card        #}
-
-        .centered-square {
-            margin-top: 35%;
-            text-align: center;
-        }
-
-        .demo-card-square.mdl-card {
-            width: 100%;
-            height: 100%;
-        }
-
-        .demo-card-square > .mdl-card__title {
-            color: #fff;
-            background: bottom right 15% no-repeat #46B6AC;
-        }
-
-    </style>
 </head>
 <body>
 <div class="mdl-grid">
@@ -67,7 +27,7 @@
             </div>
             <div class="mdl-card__actions mdl-card--border">
                 <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
-                href={{ url }}>
+                   href={{ url }}>
                     Login
                 </a>
             </div>

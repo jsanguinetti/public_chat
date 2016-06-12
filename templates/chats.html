@@ -27,12 +27,6 @@
             </div>
         {% endfor %}
     </div>
-    <div style="text-align: center">
-        <h1>
-            FALTA AGREGAR FULL TEXT SEARCH EN ALGUN MOMENTO Y CRON JOBS DE LIMPIAR CHATS
-            Message count is currently: {{ message_count }}
-        </h1>
-    </div>
     <dialog class="mdl-dialog">
         <div class="mdl-grid">
             <div class="mdl-cell mdl-cell--12-col">
@@ -59,5 +53,24 @@
             <input type="submit" class="submit-chat-button mdl-button mdl-js-button mdl-button--raised" value="SUBMIT">
         </form>
     </dialog>
+    <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+        <div class="mdl-snackbar__text"></div>
+        <button class="mdl-snackbar__action" type="button"></button>
+    </div>
     <script src="/public/js/chats.js"></script>
+    <script src="/public/jquery/index.js"></script>
+    </button>
+    <script>
+        var snackbarContainer = document.querySelector('#demo-snackbar-example');
+        var data = {
+            message: 'Messages sent so far:',
+            timeout: 2000,
+            actionHandler: function () {
+            },
+            actionText: {{ message_count }}
+        };
+        setTimeout(function () {
+            snackbarContainer.MaterialSnackbar.showSnackbar(data)
+        }, 1000);
+    </script>
 {% endblock %}
