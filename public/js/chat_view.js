@@ -6,3 +6,15 @@ function updateScroll() {
 function onScrolledMessageList() {
     scrolled = true;
 }
+
+$("#text-message-input").keypress(function (e) {
+    if (e.keyCode == 13) {
+        if (e.shiftKey === true) {
+            // new line
+        }
+        else {
+            submit_message()
+        }
+        return false;
+    }
+});

@@ -2,7 +2,6 @@
 {% block content %}
     <script src="/public/jquery/index.js"></script>
     <script src="/public/pubnub/index.js"></script>
-    <script src="/public/js/chat_view.js"></script>
     <link rel="stylesheet" href="/public/css/chat_view.css">
     <div class="mdl-grid">
         <div class="chat-wrapper">
@@ -29,7 +28,7 @@
                 </div>
             </div>
         </div>
-
+        <script src="/public/js/chat_view.js"></script>
         <script>
             var currentUserId = {{ current_user.user_id() }};
 
