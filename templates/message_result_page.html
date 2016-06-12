@@ -1,4 +1,36 @@
 {% extends "base.html" %}
 {% block content %}
-    {{ results }}
+    <form action="/messages/search" method="post">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="site-search">
+                <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+                <input class="mdl-textfield__input" type="search" id="site-search" name="search"/>
+                <label class="mdl-textfield__label" for="site-search">Search</label>
+            </div>
+        </div>
+    </form>
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col">
+            <h5>
+                Number of messages found: {{ result_count }}
+            </h5>
+            <style>
+                .demo-list-item {
+                    width: 300px;
+                }
+            </style>
+
+            <ul class="demo-list-item mdl-list">
+                {% for result in results %}
+                    <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      {{ result }}
+    </span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 {% endblock %}

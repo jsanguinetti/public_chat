@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, request, json, render_template
+from flask import Blueprint, jsonify, request, json, render_template, redirect
 from models.chat import chat_key_from_name
 from models.message import Message
 from google.appengine.api import memcache
@@ -12,6 +12,7 @@ messages = Blueprint('messages', __name__)
 def create_document(message_dict):
     return search.Document(
         fields=[search.TextField(name='user', value=message_dict['user']['nickname']),
+                search.TextField(name='chat_name', value=message_dict['chat']),
                 search.TextField(name='content', value=message_dict['content'])])
 
 
@@ -32,4 +33,10 @@ def message_search():
     query_obj = search.Query(query_string=query)
     results = search.Index(name=_INDEX_NAME).search(query=query_obj)
     return render_template('message_result_page.html',
-                           results=results)
+                           title='Message Search',
+                           results=results,
+                           result_count=results.number_found)
+
+@messages.route('/messages/search', methods=['POST'])
+def message_search_post():
+    return redirect('/messages?search='+request.form['search'])
