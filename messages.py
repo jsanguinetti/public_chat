@@ -37,6 +37,7 @@ def message_search():
                            results=results,
                            result_count=results.number_found)
 
+
 @messages.route('/messages/search', methods=['POST'])
 def message_search_post():
-    return redirect('/messages?search='+request.form['search'])
+    return redirect('/messages?search=' + request.form['search'])
