@@ -9,21 +9,22 @@ _INDEX_NAME = 'messages'
 messages = Blueprint('messages', __name__)
 
 
-def create_document(message_dict):
+def create_document(message_dict, chat):
     return search.Document(
         fields=[search.TextField(name='user', value=message_dict['user']['nickname']),
-                search.TextField(name='chat_name', value=message_dict['chat']),
+                search.TextField(name='chat_name', value=chat.name),
                 search.TextField(name='content', value=message_dict['content'])])
 
 
 @messages.route('/chats/<chat_name>/messages', methods=['POST'])
 def message_post(chat_name):
-    message = Message(parent=chat_key_from_name(chat_name),
+    chat_key = chat_key_from_name(chat_name)
+    message = Message(parent=chat_key,
                       content=request.get_json()['content'])
     message.put()
     memcache.incr('message_count')
     message_dict = message.to_dict()
-    search.Index(name=_INDEX_NAME).put(create_document(message_dict))
+    search.Index(name=_INDEX_NAME).put(create_document(message_dict, chat_key.get()))
     return jsonify(message_dict)
 
 
