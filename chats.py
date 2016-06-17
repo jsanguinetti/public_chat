@@ -1,4 +1,4 @@
-from google.appengine.api import users, memcache
+from google.appengine.api import users, memcache, mail
 from flask import request, render_template, redirect, Blueprint
 from models.chat import Chat, chat_key_from_name
 from models.message import Message
@@ -24,11 +24,32 @@ def chat_index():
                            message_count=memcache_message_count())
 
 
+def congratulations_email_with_chat_info(chat):
+    message = mail.EmailMessage(
+        sender="no-reply@apps-escalables-public-chat.appspotmail.com",
+        subject="Your account has been approved" + chat.name)
+
+    message.to = (users.get_current_user().nickname() + " " + "<" + users.get_current_user().email() + ">")
+    message.body = """Dear Albert:
+
+    Your example.com account has been approved.  You can now visit
+    http://www.example.com/ and sign in using your Google Account to
+    access new features.
+
+    Please let us know if you have any questions.
+
+    The example.com Team
+    """
+    message.send()
+
+
 @chats.route('/chats', methods=['POST'])
 def chat_post():
-    Chat(id=request.form['name'],
-         name=request.form['name'],
-         description=request.form['description']).put()
+    chat = Chat(id=request.form['name'],
+                name=request.form['name'],
+                description=request.form['description'])
+    chat.put()
+    congratulations_email_with_chat_info(chat)
     return redirect('/chats')
 
 
