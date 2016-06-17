@@ -18,6 +18,14 @@
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <!-- Title -->
+            <div class="mdl-cell mdl-cell--1-col">
+
+             <span>
+            <a href="/chats">Home</a>
+        </span>
+            </div>
+
+            <div class="mdl-cell mdl-cell--4-col">
           <span class="mdl-layout-title">
                   {% if title %}
                       {{ title }}
@@ -25,6 +33,8 @@
                       Public Chat
                   {% endif %}
           </span>
+            </div>
+
             <!-- Add spacer, to align navigation to the right -->
             <!-- Navigation. We hide it in small screens. -->
         </div>
