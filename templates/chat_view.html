@@ -74,7 +74,8 @@
         <script>
             pubnub = PUBNUB({
                 publish_key: 'pub-c-76e26168-50bc-4426-ba45-e000b3c26fec',
-                subscribe_key: 'sub-c-a1cfc456-2f9d-11e6-8b91-02ee2ddab7fe'
+                subscribe_key: 'sub-c-a1cfc456-2f9d-11e6-8b91-02ee2ddab7fe',
+                ssl: (('https:' == document.location.protocol) ? true : false)
             })
 
             function publish(message_response) {
